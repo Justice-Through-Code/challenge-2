@@ -23,7 +23,7 @@ def confirm_ingredients():  # String methods
     # 2.1 Save the f-string you wrote above into a variable called `ingredients`.
     
     # Aha, that's the issue! We need to use butter, not milk.
-    # 2.2 Use one of the string methods from class to replace 'milk' with 'butter' in a print statement
+    # 2.2 In a print statement, use one of the string methods from class to replace 'milk' with 'butter'
 
     # Hmm, when we use a string method in a print statement, does it change the string in our variable?
     # 2.3 Use a string method to count the number of times that 'milk' appears in our string.
