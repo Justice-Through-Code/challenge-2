@@ -14,6 +14,7 @@ class TestBakingStrings(TestCase):
 
     @mock.patch('sys.stdout', new_callable=io.StringIO)
     def test_print_ingredients(self, mock_stdout):
+        print_ingredients()
 
         self.assertEqual(
             'milk eggs flour sugar\nmilk eggs flour sugar\nmilk eggs flour sugar\n',
@@ -22,6 +23,7 @@ class TestBakingStrings(TestCase):
 
     @mock.patch('sys.stdout', new_callable=io.StringIO)
     def test_confirm_ingredients(self, mock_stdout):
+        confirm_ingredients()
 
         self.assertEqual(
             'butter eggs flour sugar\n1\nmilk eggs flour sugar\nbutter eggs flour sugar\nBUTTER EGGS FLOUR SUGAR\n',
@@ -30,6 +32,7 @@ class TestBakingStrings(TestCase):
 
     @mock.patch('sys.stdout', new_callable=io.StringIO)
     def test_favorite_bake(self, mock_stdout):
+        favorite_bake()
 
         self.assertEqual(
             'What is your favorite baked good? \nRoughly how many times a month do you eat s?\nstr\nOoooh, s are delicious!\nWe recommend you eat s at least times a month!\n',
