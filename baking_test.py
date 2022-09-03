@@ -30,11 +30,13 @@ class TestBakingStrings(TestCase):
             mock_stdout.getvalue()
         )
 
+    @mock.patch('builtins.input', side_effect=['brownie', '4'])
     @mock.patch('sys.stdout', new_callable=io.StringIO)
-    def test_favorite_bake(self, mock_stdout):
+    def test_favorite_bake(self, mock_stdout, mock_input):
         favorite_bake()
 
+        # Since we are patching the input() function, those printouts don't appear
         self.assertEqual(
-            'What is your favorite baked good? \nRoughly how many times a month do you eat s?\nstr\nOoooh, s are delicious!\nWe recommend you eat s at least times a month!\n',
+            "<class 'str'>\nOoooh, brownies are delicious!\nWe recommend you eat brownies at least 8 times a month!\n",
             mock_stdout.getvalue()
         )
