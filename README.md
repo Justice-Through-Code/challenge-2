@@ -27,6 +27,7 @@ Let's try printing the ingredients out a few different ways to see if we can spo
 
 Follow the instructions in `baking.py` to get cooking.
 
+And REMEMBER: Comment out or delete the calls to your functions-- the tests can't run with them!
 ---
 
 ## Summary
