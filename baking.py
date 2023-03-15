@@ -38,6 +38,8 @@ def confirm_ingredients():  # String methods
 
     # 2.7 That looks better. Let's make it official: use another string method to 
     # print the string in the `ingredients` variable in all-caps now that it's right.
+    
+#confirm_ingredients()
 
 
 def favorite_bake():  # User Input/Type conversion
@@ -60,3 +62,6 @@ def favorite_bake():  # User Input/Type conversion
     
     # print('Ooooh, {baked_good}s are delicious!')
     # print(f'We recommend you eat {baked_good}s at least {frequency * 2} times a month!')
+    
+#favorite_bake()
+
